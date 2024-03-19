@@ -20,16 +20,16 @@
   background: #efefef;
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, .2)
+  -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
 }
 
 ::-webkit-scrollbar-thumb {
   height: 50px;
   width: 50px;
-  background: rgba(0, 0, 0, .2);
+  background: rgba(0, 0, 0, 0.2);
   -webkit-border-radius: 8px;
   border-radius: 8px;
-  -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, .1)
+  -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.1);
 }
 * {
   margin: 0;
@@ -56,6 +56,10 @@ body {
   font-family: "Noto Sans KR", sans-serif;
 }
 /* 공통요소 */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
 .clearfix::after {
   content: "";
   position: relative;
@@ -91,6 +95,28 @@ body {
   background-color: #2a3a67;
   z-index: 999;
 }
+/* 스크롤 됐을때  */
+.h-fix {
+  position: fixed;
+  left: 0;
+  top: -141px;
+  width: 100%;
+}
+.h-fix-mt{
+  margin-top: 207px;
+}
+.h-show{
+  display: block !important;
+  width: 20%;
+  text-align: center;
+}
+.h-show img{
+  width: 70%;
+}
+.h-fix-gnb{
+  width: 80% !important;
+}
+/* 스크롤 됐을때 끝 */
 .h-link-list {
   position: relative;
   display: block;
