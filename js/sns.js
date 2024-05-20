@@ -1,4 +1,4 @@
-window.addEventListener("load", function () {
+$(document).ready(function () {
   // sns카테고리 관련 기능
   var snsCate = $(".sns-cate li a");
   var snsCont = $(".sns-cont");
@@ -50,6 +50,10 @@ window.addEventListener("load", function () {
       $(this).addClass("news-focus");
     });
     $(this).mouseleave(function () {
+      if (newsFocusNum == index) {
+        return;
+      }
+   
       $(this).removeClass("news-focus");
     });
   });

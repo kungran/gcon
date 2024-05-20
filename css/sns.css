@@ -121,7 +121,7 @@
   display: block;
 }
 .sns-info {
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   position: relative;
   display: block;
   padding-left: 45px;
